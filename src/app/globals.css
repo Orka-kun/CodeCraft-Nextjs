@@ -18,6 +18,17 @@
   font-weight: 400;
   font-style: normal;
 }
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.rgb{
+  background: linear-gradient(45deg, #c80f0f, #085b08, #0a0ac3);
+  background-size: 600% 600%;
+  animation: gradient 5s ease infinite;
+}
 
 
 /* @layer base {

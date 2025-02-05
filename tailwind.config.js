@@ -7,6 +7,14 @@ module.exports = {
   ],
   darkMode:'class',
   theme: {
+    screens: {
+      'xs': '480px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -29,6 +37,23 @@ module.exports = {
       maxWidth: {
         '22': '5.5rem', // Custom max-width between 5rem and 6rem
       },
+      keyframes: {
+        appear: {
+          'from': { opacity: '0', transform: 'scale(0.5)' },
+          'to': { opacity: '1', transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        appear: 'appear linear',
+      },
+       screens: {
+      'xs': '480px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
       
     },
   },

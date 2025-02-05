@@ -143,10 +143,12 @@ export default function Blog() {
       <div className='relative z-10 flex items-center gap-10'>
          <div className='text-white'>
             <h3 className=' text-3xl font-bold'>Join CodeCraft</h3>
-            <h1 className='text-[#D1FFA3] text-4xl font-bold'>Unlock exclusive access to all courses at 25% off</h1>
+            <h1 className='text-pink-600 text-4xl font-bold'>Unlock exclusive access to all courses at 25% off</h1>
             <h3 className='text-3xl font-bold'>Elevate your skills without breaking the bank!</h3>
          </div>
-          <button className='bg-[#FFFFFF] text-black rounded-full px-4 py-2 hover:text-pink-600'>Become a member </button>
+          <Link href="/signin"><button class="rgb text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-110">
+        Become a member
+    </button></Link>
       </div>
     </div>
     </div>

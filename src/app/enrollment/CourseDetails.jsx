@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import dropdown from '../enrollment/dropdown.png'
+import dropdown from '../enrollment/pictures/dropdown.png'
 import Image from "next/image";
 
 const courseContent = [
@@ -119,8 +119,8 @@ export default function CourseGrid() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold">Course Includes</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      <h1 className="text-3xl font-bold text-center">Course Includes</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 ">
     
       {courseContent.map((section, index) => (
         <div
@@ -131,16 +131,16 @@ export default function CourseGrid() {
             className="flex items-center justify-between cursor-pointer"
             onClick={() => toggleDropdown(index)}
           >
-            <span className="w-full text-left font-semibold text-lg text-gray-700">
+            <span className="w-full text-left font-semibold text-xl ">
               {index + 1}. {section.title}
             </span>
-            <span className="text-xl text-gray-500">
+            <span className="text-xl">
               {activeIndex === index ? "-" : "+"}
             </span>
           </div>
           {activeIndex === index && (
-            <div className="mt-4 text-gray-600">
-              <ul className="list-disc ml-6 space-y-2">
+            <div className="mt-4">
+              <ul className="list-disc ml-6 space-y-2 text-lg">
                 {section.topics.map((topic, topicIndex) => (
                   <li key={topicIndex}>{topic}</li>
                 ))}

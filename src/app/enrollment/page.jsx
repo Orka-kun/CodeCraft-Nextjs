@@ -1,14 +1,21 @@
+"use client"
 import React from "react";
 import CourseDetails from "./CourseDetails";
 import Link from "next/link";
+import Image from "next/image";
+import paypal from '../enrollment/pictures/paypal.png'
 
 
 const page = () => {
+
+  const enrollmentSuccess = () =>{
+    alert("Enrollment Successful...Thank you!")
+  }
   return (
     <div className="bg-[#0E0E0E] font-Nunito min-h-screen pt-10">
       <header className=" text-white py-4">
         <div className="container mx-auto">
-          <h1 className="text-3xl font-bold text-center">Enroll in Your Desired Course</h1>
+          <h1 className="text-4xl font-bold text-center">Enroll in Your Desired Course</h1>
           <div className="flex justify-between">
             <p>Enroll Now ✔</p>
             <Link href="/" className="shadow-md hover:text-pink-600">Go to Home Page</Link>
@@ -18,11 +25,12 @@ const page = () => {
 
 
       <main className="container mx-auto py-8">
+      
         {/* Course Details Section */}
         <section className="bg-white shadow rounded-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4">Web Development Bootcamp</h2>
-          <p>Become a Web Developer by building real-life projects.</p>
-          <ul className="mt-4">
+          <h2 className="text-3xl font-bold mb-4">Web Development Bootcamp</h2>
+          <p className="text-xl">Become a Web Developer by building real-life projects.</p>
+          <ul className="mt-4 text-xl">
             <li>⬛ Advanced Training</li>
             <li>⬛ Professional Certificate</li>
             <li>⬛ 60 Hour Lecture</li>
@@ -35,9 +43,9 @@ const page = () => {
         <section className="bg-white shadow rounded-lg p-6 mb-8">
             <CourseDetails/>
         </section>
-        <section className="bg-white shadow rounded-lg p-6">
-          <h2 className="text-2xl font-bold mb-4">Complete Your Enrollment</h2>
-          <form className="space-y-4">
+        <section className="bg-white shadow rounded-lg p-6 lg:max-w-[40%] mx-auto">
+          <h2 className="text-3xl font-bold mb-4">Complete Your Enrollment</h2>
+          <form className="space-y-4 text-xl">
             <div>
               <label className="block font-medium mb-1">Full Name</label>
               <input
@@ -74,7 +82,7 @@ const page = () => {
               <input type="checkbox" className="mr-2" />
               <span>I agree to the terms and conditions.</span>
             </div>
-            <button type="submit" className='bg-[#171719] shadow-md  hover:shadow-pink-600 hover:text-pink-600  text-white text-sm font-normal p-3 rounded-lg flex-1'> Enroll Now </button>
+            <button onClick={enrollmentSuccess} type="submit" className='bg-[#171719] shadow-md  hover:shadow-pink-600 hover:text-pink-600  text-white text-sm font-normal p-3 rounded-lg flex-1'> Enroll Now </button>
           </form>
         </section>
       </main>
@@ -83,3 +91,4 @@ const page = () => {
 };
 
 export default page
+ 

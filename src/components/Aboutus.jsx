@@ -2,6 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import play2 from '../assets/play2.png'
+import h1 from '../assets/h1.jpg'
+import h2 from '../assets/h2.jpg'
+import h3 from '../assets/h3.webp'
+import h4 from '../assets/h4.webp'
+import h5 from '../assets/h5.png'
 import play3 from '../assets/play3.png'
 import profile1 from '../assets/profile1.png'
 import profile2 from '../assets/profile2.png'
@@ -68,40 +73,40 @@ export default function Aboutus() {
     <div className="flex justify-center text-2xl md:text-4xl font-bold pt-20 pb-10">
       Our World Class Instructors
     </div>
-    <ul className='grid grid-cols-4 max-w-[62rem] mx-auto gap-4'>
-      <li className='bg-white rounded-lg'>
-        <Image alt='' src={human1}/>
+    <ul className='grid grid-cols-4 max-w-[62rem] mx-auto gap-4 text-white'>
+      <li className='bg-[#0E0E0E] rounded-lg'>
+        <Image alt='' src={h1} className='max-h-60 rounded'/>
         <div className='text-center py-4 '>
-          <h1 className='font-bold text-xl '>Mr. John Doe </h1>
-          <h2 className='text-sm text-[#115E57]'>Software Engineer </h2>
+          <h1 className='font-bold text-xl '>Jack Stames </h1>
+          <h2 className='text-sm text-pink-700'>Software Engineer </h2>
           <p className='text-xxs'>Microsoft</p>
           <Image alt='' className='mx-auto py-2 max-w-20' src={smIcons}/>
         </div>
       </li>
-      <li className=' bg-white rounded-lg'>
-        <Image alt='' src={human2}/>
+      <li className=' bg-[#0E0E0E] rounded-lg'>
+        <Image alt='' src={h2} className='max-h-60 rounded'/>
         <div className='text-center py-4'>
-          <h1 className='font-bold text-xl '>Mr. John Doe </h1>
-          <h2 className='text-sm text-[#115E57]'>Full Stack Developer </h2>
+          <h1 className='font-bold text-xl '>Frank Tomas </h1>
+          <h2 className='text-sm text-pink-700'>Full Stack Developer </h2>
           <p className='text-xxs'>Shopify </p>
           <Image alt='' className='mx-auto py-2 max-w-20' src={smIcons}/>
         </div>
       </li>
-      <li className='bg-white rounded-lg'>
-        <Image alt='' src={human3}/>
+      <li className='bg-[#0E0E0E] rounded-lg'>
+        <Image alt='' src={h5} className='max-h-60 rounded'/>
         <div className='text-center py-4'>
-          <h1 className='font-bold text-xl '>Mr. John Doe </h1>
-          <h2 className='text-sm text-[#115E57]'>Machine Learning Expert </h2>
+          <h1 className='font-bold text-xl '>Lee Harry </h1>
+          <h2 className='text-sm text-pink-700'>Machine Learning Expert </h2>
           <p className='text-xxs'>Open AI </p>
           <Image alt='' className='mx-auto py-2 max-w-20' src={smIcons}/>
         </div>
       </li>
-      <li className='bg-white rounded-lg'>
-        <Image alt='' src={human4}/>
+      <li className='bg-[#0E0E0E] rounded-lg'>
+        <Image alt='' src={h4} className='max-h-60 rounded'/>
         <div className='text-center py-4'>
-          <h1 className='font-bold text-xl '>Mr. John Doe </h1>
-          <h2 className='text-sm text-[#115E57]'>DevOps Engineer </h2>
-          <p className='text-xxs'>12 Google </p>
+          <h1 className='font-bold text-xl '>Mr. Noah Charlie </h1>
+          <h2 className='text-sm text-pink-700'>DevOps Engineer </h2>
+          <p className='text-xxs'>Google </p>
           <Image alt='' className='mx-auto py-2 max-w-20' src={smIcons}/>
         </div>
       </li>
@@ -113,7 +118,7 @@ export default function Aboutus() {
     </div>
     <div className='grid grid-cols-2 max-w-5xl mx-auto gap-x-10 gap-y-14 pb-24 '>
       <div className='flex items-start gap-4'>
-        <Image alt='' className='max-w-6' src={icon13}/>
+        <Image alt='' className='max-w-6 ' src={icon13}/>
         <div className=''>
         <h1 className='font-medium text-xl'>24/7 Support </h1>
         <p className='text-base pt-3  '>

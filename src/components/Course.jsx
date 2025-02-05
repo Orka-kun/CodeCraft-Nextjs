@@ -324,9 +324,12 @@ export default function Course() {
       Our New Courses
       </div>
       
-      <ul className=" rounded-lg max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 my-10 max-xl:px-28 max-2xl:px-28 ">
+      <ul className=" rounded-lg max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 my-10 max-xl:px-28 max-2xl:px-28 " >
             {cardData.map((card, index) => (
-              <li key={index} className="rounded-xl relative bg-[#FAF7F0] flex flex-col justify-between border  shadow-md hover:shadow-pink-600">
+              <li key={index} className="rounded-xl relative bg-[#FAF7F0] flex flex-col justify-between border  shadow-md hover:shadow-pink-600 animate-appear" style={{
+    animationTimeline: 'view()',
+    animationRange: 'entry 0% cover 20%',
+  }}>
                 <a className="relative">
                   <Image alt='' className=" relative object-cover  " src={card.image} loading="lazy" />
                 </a>

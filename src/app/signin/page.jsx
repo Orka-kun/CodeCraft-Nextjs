@@ -16,8 +16,8 @@ const page = () => {
           <form className="max-w-lg w-full mx-auto">
             <div className="mb-12">
               <h3 className="text-gray-800 text-4xl font-extrabold">Sign in</h3>
-              <p className="text-gray-800 text-sm mt-4 ">Dont have an account? <Link href="/signup" className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap">Register here</Link></p>
-              <p className="text-gray-800 text-sm mt-4 ">Go back to <Link href="/" className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap">Home</Link></p>
+              <p className="text-gray-800 text-sm mt-4 ">Dont have an account? <Link href="/signup" className="text-pink-700 font-semibold hover:underline ml-1 whitespace-nowrap">Register here</Link></p>
+              <p className="text-gray-800 text-sm mt-4 ">Go back to <Link href="/" className="text-pink-700 font-semibold hover:underline ml-1 whitespace-nowrap">Home</Link></p>
             </div>
 
             <div>
@@ -56,7 +56,7 @@ const page = () => {
                 </label>
               </div>
               <div>
-                <a href="jajvascript:void(0);" className="text-blue-600 font-semibold text-sm hover:underline">
+                <a href="jajvascript:void(0);" className="text-pink-700 font-semibold text-sm hover:underline">
                   Forgot Password?
                 </a>
               </div>
